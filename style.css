@@ -1,0 +1,129 @@
+body{
+    margin: 0 ;
+    background-color: #8B3A5D;
+    color: white;
+}
+.header{
+    height :30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #7a3c54;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px
+    
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.logo h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.logo span{
+    font-size: 20px;
+    color: #ffb6c1;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav a {
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;    
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+.main{
+    width:100%;
+
+}
+.hero{
+    height: 90vh;
+    background-image: url(image/photo-1471922694854-ff1b63b20054.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    transition: background-image 1.5s ease-in-out;
+    align-items:center;
+    justify-content: center;
+    color:black;
+    text-align:center;
+}
+.hero-text{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+}
+.hero-text h2{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.hero-text p{
+    font-size:20px;
+    margin-bottom: 30px;
+}
+.hero-text span{
+    color: #ffd966;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffd966;
+    color :#7a3c54;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:8px;
+    transition: background 0.3s; 
+    transition: transform 0.5s;
+    
+}
+.btn:hover{
+    background-color:#ffeb3b;
+    transform: scale(1.2) ;
+}
+.thumb-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;        /* 横にスライド可能にする */
+    padding: 10px;
+    scroll-behavior: smooth; /* スムーズスクロール */
+}
+
+.thumb-wrapper img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    flex-shrink: 0; /* スライド領域で潰れないようにする */
+}
+
+.thumb-wrapper img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.thumb-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.thumb-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.thumb-wrapper::-webkit-scrollbar-track {
+    background: #eee;
+}
